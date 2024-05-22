@@ -1,0 +1,33 @@
+{
+  "Description" : [ "This is the model setup for Stochastic Interpolants" ],
+  "model_name": "si",
+
+  "train_params": {
+    "batch_size": 256,
+    "num_itr": 1501,
+    "lr": 5e-6,
+    "lr_gamma": 0.5,
+    "lr_step": 500,
+    "l2_norm": 0.0,
+    "ema": 0.99
+  },
+
+  "logger_params": {
+    "log_writer": "tensorboard",
+    "wandb_api_key": null,
+    "wandb_user": null
+  },
+
+  "diffuse_params" :
+  {
+    "net_type": "unet1D_si",
+    "interpolant_type": "power3",
+    "gamma_type": "(2t(t-1))^0.5",
+    "epsilon_type": "1-t",
+    "prior_policy": "vae",
+    "beta_max": 0.03,
+    "t0": 1e-4,
+    "T": 1,
+    "clip_denoise": true
+  }
+}
