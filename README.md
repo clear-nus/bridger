@@ -23,7 +23,7 @@ considerations when applying BRIDGER.
 <p align="center">
   <img src="https://github.com/clear-nus/bridger/blob/main/image/bridger.png?raw=true" width="40%">
   <br />
-  <span>Fig 1. verview of action generation with BRIDGER. With
+  <span>Fig 1. Overview of action generation with BRIDGER. With
 trained velocity b and score s functions, BRIDGER transports the
 actions from source distribution to the target distribution via the forward SDE.</span>
 </p>
