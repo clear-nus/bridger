@@ -78,15 +78,12 @@ if __name__ == "__main__":
 
     if opt.model_name == 'si':
         model = StochasticInterpolants(model_args)
-        if opt.offline_prior:
-            pass
-        else:
-            prior_args = dataset_args
-            prior_args['model_name'] = opt.model_name
-            prior_args['device'] = opt.device
-            prior_args['prior_policy'] = model_args['prior_policy']
-            prior_args['seed'] = opt.seed
-            model = set_model_prior(model, prior_args)
+        prior_args = dataset_args
+        prior_args['model_name'] = opt.model_name
+        prior_args['device'] = opt.device
+        prior_args['prior_policy'] = model_args['prior_policy']
+        prior_args['seed'] = opt.seed
+        model = set_model_prior(model, prior_args)
     elif opt.model_name == 'vae':
         model = VAEModel(model_args)
     else:

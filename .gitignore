@@ -2,8 +2,6 @@ results/
 data/
 *.pt
 *.mp4
-*.png
-*.jpg
 *.zip
 eval_figs/
 .idea/
