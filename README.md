@@ -21,7 +21,7 @@ benchmarks and on real robots, BRIDGER outperforms state-of-the-art diffusion po
 considerations when applying BRIDGER.
 
 <p align="center">
-  <img src="https://github.com/clear-nus/bridger/image/bridger.png?raw=true" width="40%">
+  <img src="https://github.com/clear-nus/bridger/blob/main/image/bridger.png?raw=true" width="40%">
   <br />
   <span>Fig 1. verview of action generation with BRIDGER. With
 trained velocity b and score s functions, BRIDGER transports the
