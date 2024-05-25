@@ -65,8 +65,9 @@ class DoorPolicy:
         if state_info["latch_val"] < 0.15:
             val = state_info["palm_pos"]
 
+            if state_info["palm_pos"][-1] > 0.16:
             # if state_info["palm_pos"][-1] > 0.24:
-            if state_info["palm_pos"][-1] > 0.22:
+            # if state_info["palm_pos"][-1] > 0.22:
                 # move closer to handle
                 lin_num = self._pred_length // 3
                 # return np.linspace(self._keypoint_arr[0], self._keypoint_arr[3], num=self._pred_length)
